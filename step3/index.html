@@ -4,7 +4,6 @@
     <title>My Modal</title>
 
     <style>
-
       /*** boilerplate ***/
       .frame * {
         position: absolute;
@@ -13,6 +12,12 @@
         justify-content: flex-start;
       }
       /*** boilerplate ***/
+
+      .button {
+        background: rgb(255, 255, 255);
+        border-radius: 6px;
+        border: 1px black solid;
+      }
 
       /* Frame 1 */
       #n1_2 {
@@ -32,11 +37,6 @@
       }
 
       /* Rectangle 2 */
-      #n1_5 {
-        background: rgb(255, 255, 255);
-        border-radius: 6px;
-        box-shadow: rgb(0, 0, 0) 0px 0px 0px 2px inset;
-      }
 
       /* OPEN MODAL */
       #n1_6 {
@@ -69,6 +69,7 @@
 
       /* My Modal */
       #n1_64 {
+        padding: 10px;
         font-family: Roboto;
         font-size: 24px;
         font-weight: 700;
@@ -78,20 +79,17 @@
         justify-content: flex-start;
         transform: translate(0px, 1.76px);
         line-height: 24px;
-        left: 51.2337%;
-        right: 10.5951%;
-        top: 25.25%;
-        bottom: 71.2%;
       }
 
       /* Rectangle 3 */
       #n1_65 {
+        margin: 10px;
         background: rgb(255, 255, 255);
         box-shadow: rgb(148, 141, 141) 0px 0px 0px 1px inset;
-        left: 363px;
         width: 268px;
-        top: 188px;
+        top: 50px;
         height: 150px;
+        padding: 10px;
       }
 
       /* stuff */
@@ -101,14 +99,10 @@
         font-weight: 700;
         letter-spacing: 0px;
         color: rgb(0, 0, 0);
-        vertical-align: middle;
         justify-content: flex-start;
         width: 28px;
         transform: translate(0px, -3.74px);
         line-height: 24px;
-        height: 24px;
-        left: 377px;
-        top: 206px;
       }
 
       /* Button */
@@ -116,16 +110,8 @@
         width: 97px;
         height: 33px;
         overflow: visible;
-        left: 551px;
-        top: 405px;
-      }
-
-      /* Rectangle 2 */
-      #n1_68 {
-        background: rgb(255, 255, 255);
-        border-radius: 6px;
-        border: 1px black solid;
-        box-shadow: rgb(148, 141, 141) 0px 0px 0px 2px inset;
+        right: 20px;
+        bottom: 20px;
       }
 
       /* Close */
@@ -156,28 +142,26 @@
     <!-- Frame 1 -->
     <div class="frame" id="n1_2">
       <!-- Button -->
-      <div class="frame" id="n1_4">
-        <!-- Rectangle 2 -->
-        <div class="scale rectangle" id="n1_5"></div>
+      <div class="frame button" id="n1_4">
         <!-- OPEN MODAL -->
         <div class="scale text" id="n1_6">OPEN MODAL</div>
       </div>
       <!-- Modal -->
       <div class="group" id="n1_70">
         <!-- Background -->
-        <div class="left top rectangle" id="n1_7"></div>
-        <!-- My Modal -->
-        <div class="scale text" id="n1_64">My Modal</div>
-        <!-- Rectangle 3 -->
-        <div class="left top rectangle" id="n1_65"></div>
-        <!-- stuff -->
-        <div class="left top text" id="n1_66">stuff</div>
-        <!-- Button -->
-        <div class="frame" id="n1_67">
-          <!-- Rectangle 2 -->
-          <div class="scale rectangle" id="n1_68"></div>
-          <!-- Close -->
-          <div class="scale text" id="n1_69">Close</div>
+        <div class="left top rectangle" id="n1_7">
+          <!-- My Modal -->
+          <div class="scale text" id="n1_64">My Modal</div>
+          <!-- Rectangle 3 -->
+          <div class="left top rectangle" id="n1_65">
+            <!-- stuff -->
+            <div class="left top text" id="n1_66">stuff</div>
+          </div>
+          <!-- Button -->
+          <div class="frame button" id="n1_67">
+            <!-- Close -->
+            <div class="scale text" id="n1_69">Close</div>
+          </div>
         </div>
       </div>
     </div>
